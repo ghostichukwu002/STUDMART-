@@ -90,7 +90,11 @@
               <small class="school-note" id="schoolNote">Your choice personalises your campus marketplace.</small>
             </div>
             <div class="school-map" aria-hidden="true"><span>🇳🇬</span><strong>36 states</strong><small>One student marketplace</small></div>
-          </section>
+          <footer class="site-footer">
+  <div class="footer-brand">STUDMART</div>
+  <div class="footer-copy">Find it. Share it. <span>·</span> Built by <strong>X-DEVS</strong></div>
+  <div class="footer-credit">© 2026 X-DEVS</div>
+</footer></section>
 
           <div class="section-head">
             <div><span class="eyebrow">DISCOVER</span><h2>Shop by category</h2></div>
@@ -139,18 +143,30 @@
             </aside>
             <div class="market-results"><div class="result-meta"><span id="resultCount">12 items</span><span>Updated just now</span></div><div class="listing-grid" id="marketListings"></div></div>
           </div>
-        </section>
+        <footer class="site-footer">
+  <div class="footer-brand">STUDMART</div>
+  <div class="footer-copy">Find it. Share it. <span>·</span> Built by <strong>X-DEVS</strong></div>
+  <div class="footer-credit">© 2026 X-DEVS</div>
+</footer></section>
 
         <section class="view" id="categories">
           <div class="page-title"><div><span class="eyebrow">CATEGORIES</span><h1>Find your next useful thing.</h1><p>Curated for everyday student life.</p></div></div>
           <div class="category-large-grid" id="categoryLarge"></div>
-        </section>
+        <footer class="site-footer">
+  <div class="footer-brand">STUDMART</div>
+  <div class="footer-copy">Find it. Share it. <span>·</span> Built by <strong>X-DEVS</strong></div>
+  <div class="footer-credit">© 2026 X-DEVS</div>
+</footer></section>
 
         <section class="view" id="saved">
           <div class="page-title"><div><span class="eyebrow">YOUR SAVED ITEMS</span><h1>Keep your favourites close.</h1><p>Items you save will appear here.</p></div></div>
           <div class="empty-state" id="savedState"><div>♡</div><h2>No saved items yet</h2><p>Tap the heart on any listing to save it for later.</p><button class="primary" data-view="marketplace">Browse listings</button></div>
           <div class="listing-grid" id="savedListings"></div>
-        </section>
+        <footer class="site-footer">
+  <div class="footer-brand">STUDMART</div>
+  <div class="footer-copy">Find it. Share it. <span>·</span> Built by <strong>X-DEVS</strong></div>
+  <div class="footer-credit">© 2026 X-DEVS</div>
+</footer></section>
 
         <section class="view" id="messages">
           <div class="page-title"><div><span class="eyebrow">MESSAGES</span><h1>Chat with students.</h1><p>Keep buying and selling conversations in one place.</p></div></div>
@@ -167,7 +183,11 @@
               <div class="chat-compose"><input placeholder="Write a message..." /><button>➤</button></div>
             </div>
           </div>
-        </section>
+        <footer class="site-footer">
+  <div class="footer-brand">STUDMART</div>
+  <div class="footer-copy">Find it. Share it. <span>·</span> Built by <strong>X-DEVS</strong></div>
+  <div class="footer-credit">© 2026 X-DEVS</div>
+</footer></section>
 
         <section class="view" id="sell">
           <div class="page-title"><div><span class="eyebrow">SELL ON STUDMART</span><h1>Turn unused things into value.</h1><p>Create a clean listing in less than a minute.</p></div></div>
@@ -186,18 +206,50 @@
             </form>
             <aside class="sell-tip"><span class="eyebrow">SELLER TIP</span><h2>Good listings sell faster.</h2><ul><li>Use bright, clear photos.</li><li>Be honest about the condition.</li><li>Include your campus pickup point.</li><li>Reply quickly to interested students.</li></ul></aside>
           </div>
-        </section>
+        <footer class="site-footer">
+  <div class="footer-brand">STUDMART</div>
+  <div class="footer-copy">Find it. Share it. <span>·</span> Built by <strong>X-DEVS</strong></div>
+  <div class="footer-credit">© 2026 X-DEVS</div>
+</footer></section>
 
         <section class="view" id="profile">
-          <div class="profile-cover"></div>
-          <div class="profile-head">
-            <div class="profile-avatar">AO</div>
-            <div class="profile-main"><div class="verified-pill">✓ SCHOOL VERIFIED</div><h1>Alex Okafor</h1><p>Computer Science · 300 Level · Main Campus</p><span>Member since September 2026</span></div>
-            <button class="secondary">Edit profile</button>
+          <div class="profile-auth" id="profileAuth">
+            <div class="auth-intro"><span class="eyebrow">WELCOME TO STUDMART</span><h1>Buy, sell and connect on campus.</h1><p>Sign in to manage your listings, save useful finds, and chat with verified students.</p><div class="auth-trust"><span>✓ School-focused marketplace</span><span>✓ Verified student community</span></div></div>
+            <div class="auth-card">
+              <div class="auth-tabs"><button class="auth-tab active" type="button" data-auth-mode="login">Log in</button><button class="auth-tab" type="button" data-auth-mode="signup">Create account</button></div>
+              <form class="auth-form" id="loginForm">
+                <div class="auth-form-head"><h2>Welcome back</h2><p>Log in to continue to your profile.</p></div>
+                <label>Email address<input name="email" type="email" autocomplete="email" placeholder="you@example.com" required /></label>
+                <label>Password<input name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required /></label>
+                <button class="primary full" type="submit">Log in →</button>
+                <small class="auth-error" id="loginError" role="alert"></small>
+              </form>
+              <form class="auth-form hidden" id="signupForm">
+                <div class="auth-form-head"><h2>Create your account</h2><p>Join students buying and selling around campus.</p></div>
+                <label>Full name<input name="name" autocomplete="name" placeholder="e.g. Alex Okafor" required /></label>
+                <label>Email address<input name="email" type="email" autocomplete="email" placeholder="you@example.com" required /></label>
+                <label>Password<input name="password" type="password" autocomplete="new-password" minlength="8" placeholder="At least 8 characters" required /></label>
+                <button class="primary full" type="submit">Create account →</button>
+                <small class="auth-error" id="signupError" role="alert"></small>
+              </form>
+              <small class="auth-footnote">By continuing, you agree to keep STUDMART safe for students.</small>
+            </div>
           </div>
-          <div class="profile-stats"><div><strong>24</strong><span>Listings</span></div><div><strong>4.9</strong><span>Seller rating</span></div><div><strong>31</strong><span>Successful sales</span></div><div><strong>12</strong><span>Saved items</span></div></div>
-          <div class="profile-body"><div><span class="eyebrow">MY LISTINGS</span><h2>Active listings</h2><div class="listing-grid" id="profileListings"></div></div><aside class="profile-card"><span class="eyebrow">ABOUT</span><p>Student seller focused on affordable tech, books and everyday campus essentials.</p><div class="profile-row">📍 Main Campus</div><div class="profile-row">🎓 Computer Science</div><div class="profile-row">🛡️ Verified student</div></aside></div>
-        </section>
+          <div class="profile-dashboard hidden" id="profileDashboard">
+            <div class="profile-cover"></div>
+            <div class="profile-head">
+              <div class="profile-avatar" id="profileAvatar">AO</div>
+              <div class="profile-main"><div class="verified-pill" id="profileVerified">✓ SCHOOL VERIFIED</div><h1 id="profileName">Alex Okafor</h1><p id="profileDetails">Computer Science · 300 Level · Main Campus</p><span id="profileMemberSince">Member since September 2026</span></div>
+              <div class="profile-actions"><button class="secondary" type="button">Edit profile</button><button class="text-btn" id="logoutBtn" type="button">Log out</button></div>
+            </div>
+            <div class="profile-stats"><div><strong id="profileListingsCount">24</strong><span>Listings</span></div><div><strong id="profileRating">4.9</strong><span>Seller rating</span></div><div><strong id="profileSales">31</strong><span>Successful sales</span></div><div><strong id="profileSavedCount">12</strong><span>Saved items</span></div></div>
+            <div class="profile-body"><div><span class="eyebrow">MY LISTINGS</span><h2>Active listings</h2><div class="listing-grid" id="profileListings"></div></div><aside class="profile-card"><span class="eyebrow">ABOUT</span><p>Student seller focused on affordable tech, books and everyday campus essentials.</p><div class="profile-row">📍 <span id="profileCampus">Main Campus</span></div><div class="profile-row">🎓 <span id="profileDepartment">Computer Science</span></div><div class="profile-row">🛡️ Verified student</div></aside></div>
+          </div>
+        <footer class="site-footer">
+  <div class="footer-brand">STUDMART</div>
+  <div class="footer-copy">Find it. Share it. <span>·</span> Built by <strong>X-DEVS</strong></div>
+  <div class="footer-credit">© 2026 X-DEVS</div>
+</footer></section>
       </main>
     </div>
   </div>
@@ -212,7 +264,7 @@
         <div class="modal-price" id="modalPrice">₦45,000</div>
         <p id="modalDesc">Great condition and lightly used. Perfect for lectures, study sessions and travel.</p>
         <div class="seller-mini" id="modalSeller"></div>
-        <button class="primary full">Message seller</button>
+        <button class="primary full" id="messageSellerBtn" type="button">Message seller →</button>
       </div>
     </div>
   </div>
